@@ -23,21 +23,6 @@ cd tests
 sudo python test_main.py
 ```
 
-### Break down into end to end tests
-
-These tests help to keep track on what program is doing, for example: 
-
-```
-    def test_inital_create_board(self):
-        board_1 = [["□", "□", "□"], ["□", "□", "□"], ["□", "□", "□"]]
-        self.assertEqual(board_1, self.board_1.board)
-
-        board_2 = []
-        self.assertEqual(board_2, self.board_2.board)
-```
-Allow us to check if board is printing in the right way
-
-
 ## Run live version
 
 After you've cloned the repo, you can simply run: 
