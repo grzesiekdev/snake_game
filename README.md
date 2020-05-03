@@ -14,9 +14,6 @@ What things you need to install the software and how to install them
 ```
 pip install -r requirements.txt
 ```
-Required libs: 
--keyboard
-
 
 ## Running the tests
 
