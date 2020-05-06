@@ -31,6 +31,11 @@ sudo python main.py
 Unfortunetly, on Linux you need to run app with root privileges, because keyboard lib needs it. 
 
 
+You can change size of board and snake speed by changing following line in _main.py_ 
+```
+    board_obj = Board(15, 7, 0.3)  # Set: width, height, speed
+
+```
 
 ## Authors
 
