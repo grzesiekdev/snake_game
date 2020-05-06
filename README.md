@@ -1,10 +1,10 @@
 # Snake game
 
-Simple snake game written in Python 3.8 for Linux Terminal
+Simple snake game written in Python 3.8 for Linux Terminal. My maing goal was to keep it away from big libraries like curses, pygame, or even tkinter. I've tried to make it working in terminal, and i think that i've achieved that. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See 'Run live version' for notes on how to deploy the project on a live system. 
 
 
 ### Prerequisites
@@ -17,7 +17,6 @@ pip install -r requirements.txt
 
 ## Running the tests
 
-More tests will be made, but you can run current ones by: 
 ```
 cd tests
 sudo python test_main.py
@@ -29,11 +28,11 @@ After you've cloned the repo, you can simply run:
 ```
 sudo python main.py
 ```
-Unfortunetly, on Linux you need to run program with root privileges, because keyboard lib needs it. 
+Unfortunetly, on Linux you need to run app with root privileges, because keyboard lib needs it. 
 
 
 
 ## Authors
 
-* **Grzegorz Bednarski** - *Initial work*
+* **Grzegorz Bednarski** - *Whole project*
 
