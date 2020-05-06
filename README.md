@@ -14,9 +14,6 @@ What things you need to install the software and how to install them
 ```
 pip install -r requirements.txt
 ```
-Required libs: 
--keyboard
-
 
 ## Running the tests
 
@@ -25,21 +22,6 @@ More tests will be made, but you can run current ones by:
 cd tests
 sudo python test_main.py
 ```
-
-### Break down into end to end tests
-
-These tests help to keep track on what program is doing, for example: 
-
-```
-    def test_inital_create_board(self):
-        board_1 = [["□", "□", "□"], ["□", "□", "□"], ["□", "□", "□"]]
-        self.assertEqual(board_1, self.board_1.board)
-
-        board_2 = []
-        self.assertEqual(board_2, self.board_2.board)
-```
-Allow us to check if board is printing in the right way
-
 
 ## Run live version
 
