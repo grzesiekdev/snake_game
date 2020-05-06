@@ -31,19 +31,23 @@ def start_game(snake: Snake, board_obj: Board):
         print("BODY: ", snake.body_segments)
         print("APPLE: ", snake.apple_pos)
 
-        snake.move()
+        # Caught exception if snake went over board
+        try:
+            snake.move()
+        except IndexError:
+            snake.collision()
+
         print('\n'.join(map(' '.join, board_obj.__str__())))
         snake.ate = False
-        if snake.head_pos == snake.apple_pos:
-            snake.eat_apple()
-            snake.spawn_apple(board_obj)
+        snake.check_if_ate()
+
         time.sleep(board_obj.SPEED)
         os.system('clear')
     print(f"Game over! Points: {snake.length}")
 
 
 if __name__ == "__main__":
-    board_obj = Board(15, 10, 0.3)  # Set: width, height, speed
+    board_obj = Board(15, 7, 0.3)  # Set: width, height, speed
     snake = Snake(board_obj.WIDTH // 2, board_obj.HEIGHT // 2, board_obj)  # Set: snake_game x and y position
 
     start_game(snake, board_obj)
