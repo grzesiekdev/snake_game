@@ -53,8 +53,8 @@ class Snake:
 
     def spawn_apple(self, board_obj: Board) -> None:
         while True:
-            x = random.randint(0, board_obj.WIDTH-2)
-            y = random.randint(0, board_obj.HEIGHT-2)
+            x = random.randint(0, board_obj.WIDTH-1)
+            y = random.randint(0, board_obj.HEIGHT-1)
             apple_pos = [x, y]
             if apple_pos not in self.body_segments and apple_pos != self.head_pos:
                 break
@@ -66,5 +66,10 @@ class Snake:
         self.ate = True
 
     def collision(self) -> bool:
-        return self.head_pos in self.body_segments or self.y_pos in [self.board_obj.HEIGHT-1, -1] \
-                or self.x_pos in [self.board_obj.WIDTH-2, -1]
+        return self.head_pos in self.body_segments or self.y_pos in [self.board_obj.HEIGHT, -1] \
+                or self.x_pos in [self.board_obj.WIDTH, -1]
+
+    def check_if_ate(self):
+        if self.head_pos == self.apple_pos:
+            self.eat_apple()
+            self.spawn_apple(self.board_obj)
