@@ -1,7 +1,7 @@
 # Snake game
 
 Simple snake game written in Python 3.8 for Linux Terminal. My main goal was to keep it away from big libraries like curses, pygame, or even tkinter. I've tried to make it working in terminal, and i think that i've achieved that. 
-![Sample snake game in Ubuntu terminal](https://i.imgur.com/IuMmFgY.png)
+![Sample snake game in Ubuntu terminal](https://i.imgur.com/UCZUd7r.png)
 
 ## Getting Started
 
