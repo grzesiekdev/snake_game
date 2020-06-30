@@ -1,3 +1,6 @@
+## Disclaimer
+If you want to get know my technical skills better, take a look at this repository: https://github.com/grzesiekdev/indeed_scraper
+
 # Snake game
 
 Simple snake game written in Python 3.8 for Linux Terminal. My main goal was to keep it away from big libraries like curses, pygame, or even tkinter. I've tried to make it working in terminal, and i think that i've achieved that. 
